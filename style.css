@@ -1,0 +1,373 @@
+* {
+    margin: 0 auto ;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+p {
+    font-size: 20px;
+    color: #9eabb2;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.primeira-section {
+    width: 100%;
+    background-image: url('Bitmap 2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 110px 20px 70px;
+}
+
+main {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main img {
+    margin-bottom: 45px;
+}
+
+.text-present1 {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #4c545d;
+    margin-bottom: 22px;
+}
+
+main p {
+    font-size: 22px;
+    max-width: 720px;
+    margin-bottom: 42px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao1,
+.botao2 {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 17px 38px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.botao1 {
+    background-color: #26baa4;
+}
+
+.botao1:hover {
+    background-color: #1f9e8b;
+}
+
+.botao2 {
+    background-color: #6173ff;
+}
+
+.botao2:hover {
+    background-color: #4b5ce0;
+}
+
+
+.segunda-section {
+    width: 100%;
+    padding: 80px 0; 
+}
+
+.introducao {
+    max-width: 780px;
+    margin: 0 auto 80px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.introducao h2 {
+    font-size: 40px;
+    color: #4c545d;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.conteudo-organizacao {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 90px;
+}
+
+.imagem-computador {
+    width: 52%;
+    margin-left: -35px; 
+}
+
+.imagem-computador img {
+    width: 100%;
+    display: block;
+}
+
+.lista-recursos {
+    width: 35%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    text-align: left;
+}
+
+.recurso h3 {
+    font-size: 26px;
+    color: #4c545d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.recurso p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
+.terceira-section {
+    width: 100%;
+    text-align: center;
+    padding: 70px 24px 20px;
+}
+
+.terceira-section h2 {
+    font-size: 40px;
+    color: #4c545d;
+    font-weight: 600;
+    max-width: 720px;
+    margin: 0 auto 20px;
+}
+
+.terceira-section p {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.terceira {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 24px 100px;
+}
+
+.terceira section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.terceira img {
+    width: 100%;
+    max-width: 920px;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 19px;
+    }
+
+    .primeira-section {
+        padding: 90px 32px 60px;
+    }
+
+    .text-present1 {
+        font-size: 42px;
+    }
+
+    main p {
+        font-size: 20px;
+        max-width: 620px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .botao1,
+    .botao2 {
+        font-size: 18px;
+        padding: 15px 32px;
+    }
+
+    .segunda-section {
+        padding: 70px 32px;
+    }
+
+    .introducao {
+        margin-bottom: 60px;
+    }
+
+    .introducao h2,
+    .terceira-section h2 {
+        font-size: 35px;
+    }
+
+    .conteudo-organizacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+
+    .imagem-computador {
+        width: 85%;
+        max-width: 620px;
+        margin-left: 0;
+    }
+
+    .lista-recursos {
+        width: 100%;
+        max-width: 540px;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .recurso h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .recurso p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .terceira img {
+        max-width: 680px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 17px;
+    }
+
+    .primeira-section {
+        padding: 70px 24px 50px;
+    }
+
+    main img {
+        width: 110px;
+        margin-bottom: 40px;
+    }
+
+    .text-present1 {
+        font-size: 34px;
+    }
+
+    main p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+   
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 18px;
+    }
+
+    .botao1,
+    .botao2 {
+        width: 100%;
+        max-width: 340px;
+        font-size: 18px;
+        padding: 16px 25px;
+    }
+
+    .segunda-section {
+        padding: 60px 24px;
+    }
+
+    .introducao {
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .introducao h2,
+    .terceira-section h2 {
+        font-size: 30px;
+    }
+
+    .imagem-computador {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lista-recursos {
+        width: 100%;
+        gap: 35px;
+    }
+
+    .recurso h3 {
+        font-size: 24px;
+    }
+
+    .recurso p {
+        font-size: 17px;
+    }
+
+    .terceira-section {
+        padding: 50px 24px 20px;
+    }
+
+    .terceira {
+        padding: 40px 24px 80px;
+    }
+
+    .terceira img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
